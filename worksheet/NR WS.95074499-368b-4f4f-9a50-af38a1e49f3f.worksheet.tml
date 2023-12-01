@@ -95,7 +95,7 @@ worksheet:
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
-  - name: Employee Last Name
+  - name: Last Name
     column_id: employee_1::Employee_Last Name
     properties:
       column_type: ATTRIBUTE
