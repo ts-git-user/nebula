@@ -1,0 +1,35 @@
+guid: 64fe50cc-4719-4085-866a-deace9c6311d
+answer:
+  name: Total Employee Salary by Customer Name
+  tables:
+  - id: NR WS
+    name: NR WS
+    fqn: 95074499-368b-4f4f-9a50-af38a1e49f3f
+  search_query: "[Customer Name] [Employee Salary]"
+  answer_columns:
+  - name: Customer Name
+  - name: Total Employee Salary
+  table:
+    table_columns:
+    - column_id: Customer Name
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Employee Salary
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Customer Name
+    - Total Employee Salary
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Customer Name
+    - column_id: Total Employee Salary
+    axis_configs:
+    - x:
+      - Customer Name
+      "y":
+      - Total Employee Salary
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Customer Name\",\"columnProperty\": {}},{\"columnId\": \"Total Employee Salary\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a6efea1c-5b69-4187-b15f-852e3895dee9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Employee Salary\"],\"isOpposite\": false}},{\"id\": \"26cc7ebb-b7f6-4ab7-ada6-6bb1f1b04ca3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Employee Salary\",\"color\": \"#06BF7F\"}]}"
+  display_mode: CHART_MODE
