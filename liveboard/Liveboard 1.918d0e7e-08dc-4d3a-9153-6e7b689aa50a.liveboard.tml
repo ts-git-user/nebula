@@ -1,6 +1,6 @@
 guid: 918d0e7e-08dc-4d3a-9153-6e7b689aa50a
 liveboard:
-  name: tsadmin's first Liveboard
+  name: Liveboard 1
   visualizations:
   - id: Viz_1
     answer:
@@ -38,3 +38,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Employee Salary\",\"columnProperty\": {}},{\"columnId\": \"Employee Last Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4bb297be-dc59-4faf-9ed7-1ffd2fda98e1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Employee Salary\"],\"isOpposite\": false}},{\"id\": \"79d1a979-a133-4135-9c1a-ac838792d2dc\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Employee Last Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Employee Salary\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 55fb3957-8ecd-4050-a24a-5a4dd8ca5e62
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
