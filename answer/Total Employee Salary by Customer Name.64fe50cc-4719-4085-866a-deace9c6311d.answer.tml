@@ -5,31 +5,38 @@ answer:
   - id: NR WS
     name: NR WS
     fqn: 95074499-368b-4f4f-9a50-af38a1e49f3f
-  search_query: "[Customer Name] [Employee Salary]"
+  search_query: "[Customer Name] [Employee Salary] [Customer Zip]"
   answer_columns:
   - name: Customer Name
   - name: Total Employee Salary
+  - name: Total Customer Zip
   table:
     table_columns:
     - column_id: Customer Name
       headline_aggregation: COUNT_DISTINCT
     - column_id: Total Employee Salary
       headline_aggregation: SUM
+    - column_id: Total Customer Zip
+      headline_aggregation: SUM
     ordered_column_ids:
     - Customer Name
     - Total Employee Salary
+    - Total Customer Zip
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: SCATTER
     chart_columns:
     - column_id: Customer Name
     - column_id: Total Employee Salary
+    - column_id: Total Customer Zip
     axis_configs:
     - x:
-      - Customer Name
-      "y":
       - Total Employee Salary
+      "y":
+      - Total Customer Zip
+      category:
+      - Customer Name
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Customer Name\",\"columnProperty\": {}},{\"columnId\": \"Total Employee Salary\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a6efea1c-5b69-4187-b15f-852e3895dee9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Employee Salary\"],\"isOpposite\": false}},{\"id\": \"26cc7ebb-b7f6-4ab7-ada6-6bb1f1b04ca3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Customer Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Employee Salary\",\"color\": \"#06BF7F\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Customer Name\",\"columnProperty\": {}},{\"columnId\": \"Total Employee Salary\",\"columnProperty\": {}},{\"columnId\": \"Total Customer Zip\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2076ee3e-96b2-4959-8db0-754cd8300421\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Customer Zip\"],\"isOpposite\": false}},{\"id\": \"df257f80-7f62-418c-94cb-10361f62ced5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Employee Salary\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Employee Salary\",\"color\": \"#06BF7F\"},{\"serieName\": \"Total Customer Zip\",\"color\": \"#2E75F0\"}]}"
   display_mode: CHART_MODE
