@@ -29,7 +29,7 @@ liveboard:
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
-        type: AREA
+        type: SCATTER
         chart_columns:
         - column_id: Customer Name
         - column_id: Total Employee Salary
