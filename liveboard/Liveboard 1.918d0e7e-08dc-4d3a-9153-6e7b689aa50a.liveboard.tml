@@ -38,6 +38,47 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Employee Salary\",\"columnProperty\": {}},{\"columnId\": \"Last Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4bb297be-dc59-4faf-9ed7-1ffd2fda98e1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Employee Salary\"],\"isOpposite\": false}},{\"id\": \"79d1a979-a133-4135-9c1a-ac838792d2dc\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Last Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Employee Salary\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 55fb3957-8ecd-4050-a24a-5a4dd8ca5e62
+  - id: Viz_2
+    answer:
+      name: Total Employee Salary by Employee Last Name
+      tables:
+      - id: NR WS
+        name: NR WS
+        fqn: 95074499-368b-4f4f-9a50-af38a1e49f3f
+      search_query: "[Employee Salary] [Last Name] [Employee First Name]"
+      answer_columns:
+      - name: Total Employee Salary
+      - name: Last Name
+      - name: Employee First Name
+      table:
+        table_columns:
+        - column_id: Last Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Employee First Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Employee Salary
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Last Name
+        - Employee First Name
+        - Total Employee Salary
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Last Name
+        - column_id: Employee First Name
+        - column_id: Total Employee Salary
+        axis_configs:
+        - x:
+          - Employee First Name
+          "y":
+          - Total Employee Salary
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Employee Salary\",\"columnProperty\": {}},{\"columnId\": \"Last Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4bb297be-dc59-4faf-9ed7-1ffd2fda98e1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Employee Salary\"],\"isOpposite\": false}},{\"id\": \"79d1a979-a133-4135-9c1a-ac838792d2dc\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Last Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Employee Salary\",\"color\": \"#FF8142\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: f7f60988-b307-4107-ad4e-dfe8ebda7097
   layout:
     tiles:
     - visualization_id: Viz_1
